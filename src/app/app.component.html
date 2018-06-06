@@ -2,9 +2,7 @@
 
 <h1>To Do List for {{month}}/{{day}}/{{year}}</h1>
 <h3>{{currentTask}}</h3>
-<ul>
-<li [class]="priorityColor(currentTask)" *ngFor="let currentTask of tasks">{{currentTask.description}} <button (click)="editTask(currentTask)">Edit!</button></li>
-</ul>
+<app-task-list></app-task-list>
 
 <form>
   <input [(ngModel)]="userName" type="text" name="user">
