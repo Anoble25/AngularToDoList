@@ -22,8 +22,8 @@ export class AppComponent {
 
   selectedTask: Task = this.tasks[0];
 
-  editTask() {
-    alert("You just requested to edit a Task!");
+  editTask(clickedTask) {
+    this.selectedTask=clickedTask;
   }
 
   priorityColor(currentTask){
